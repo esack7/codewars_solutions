@@ -1,0 +1,50 @@
+{
+  "name": "codewars_solutions",
+  "version": "1.0.0",
+  "description": "My Code War's challenge solutions",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon index.js",
+    "start:debug": "DEBUG=codewars_solutions* nodemon index.js",
+    "test": "jest --runInBand",
+    "test:exit": "jest --forceExit",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint .",
+    "lint:test": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esack7/codewars_solutions.git"
+  },
+  "author": "Isaac Heist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esack7/codewars_solutions/issues"
+  },
+  "homepage": "https://github.com/esack7/codewars_solutions#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "debug": "^3.1.0",
+    "eslint": "^4.10.0",
+    "faker": "^4.1.0",
+    "jest": "^21.2.1"
+  }
+}
