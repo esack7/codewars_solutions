@@ -9,4 +9,7 @@ describe('testing codewars break camel case solution', function() {
   test('"camelCase" should return "camel Case"', () => {
     expect(camelCase('camelCase')).toBe('camel Case');
   });
+  test('"helloVeryBigHappyWorld" should return "hello Very Big Happy World"', () => {
+    expect(camelCase('helloVeryBigHappyWorld')).toBe('hello Very Big Happy World');
+  });
 });
