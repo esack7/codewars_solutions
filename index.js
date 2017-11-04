@@ -4,19 +4,23 @@ const camelCase = require('./lib/break_camel_case');
 const rNumeralEncoder = require('./lib/roman_numeral_encoder');
 let args = process.argv;
 let codewar;
-console.log('The argument passed in is = ', args[3]);
-switch (args[2]) {
-case 'camelCase':
-  codewar = camelCase;
-  break;
+if(args[3]) {
+  console.log('The argument passed in is = ', args[3]);
+}
+if(args[2]) {
+  switch (args[2]) {
+    case 'camelCase':
+    codewar = camelCase;
+    break;
 
-case 'rNumeralEncoder':
-  codewar = rNumeralEncoder;
-  break;
+    case 'rNumeralEncoder':
+    codewar = rNumeralEncoder;
+    break;
 
-default:
-  console.error(`The method ${args[2]} is not valid`);
-  break;
+    default:
+    console.error(`The method ${args[2]} is not valid`);
+    return;
+  }
 }
 
 if(args[2] && args[3]) {
