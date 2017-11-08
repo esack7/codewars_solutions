@@ -2,6 +2,7 @@
 
 const camelCase = require('./lib/break_camel_case');
 const rNumeralEncoder = require('./lib/roman_numeral_encoder');
+const extractDomain = require('./lib/extract_domain');
 let args = process.argv;
 let codewar;
 if(args[3]) {
@@ -15,6 +16,10 @@ if(args[2]) {
 
     case 'rNumeralEncoder':
     codewar = rNumeralEncoder;
+    break;
+
+    case 'extractDomain':
+    codewar = extractDomain;
     break;
 
     default:
