@@ -21,9 +21,15 @@ npm run start camelCase [string]
 npm run start rNumeralEncoder [number]
 ```
 
+[Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/javascript)
+```bash
+npm run start rangeExtract [array of ordered numbers]
+```
+
 ### Running tests
 
 To run tests use the following CLI command:
 
 ```bash
-npm run test```
+npm run test
+```
