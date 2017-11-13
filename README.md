@@ -26,6 +26,13 @@ npm run start rNumeralEncoder [number]
 npm run start rangeExtract [array of ordered numbers]
 ```
 
+[Daily Calorie Requirement](https://www.codewars.com/kata/daily-calorie-requirement/train/javascript)
+```bash
+npm run start dCalReq '[name, gender (m/f), age (y), height (cm), weight (kg), activity level]'
+```
+* Activity Levels: ```little activity```, ```moderately active```, ```very active```, ```extremely active```
+
+
 ### Running tests
 
 To run tests use the following CLI command:

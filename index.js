@@ -4,6 +4,7 @@ const camelCase = require('./lib/break_camel_case');
 const rNumeralEncoder = require('./lib/roman_numeral_encoder');
 const extractDomain = require('./lib/extract_domain');
 const rangeExtract = require('./lib/range_extraction');
+const dCalReq = require('./lib/daily_calorie_req');
 
 let args = process.argv;
 let codewar;
@@ -26,6 +27,10 @@ if(args[2]) {
 
     case 'rangeExtract':
     codewar = rangeExtract;
+    break;
+
+    case 'dCalReq':
+    codewar = dCalReq;
     break;
 
     default:
