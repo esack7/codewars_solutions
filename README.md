@@ -13,12 +13,12 @@ npm run start extractDomain [url]
 
 [Break camelCase](https://www.codewars.com/kata/break-camelcase/train/javascript) -
 ```bash
-npm run start camelCase [string]
+npm run start camelCase 'string'
 ```
 
 [Roman Numeral Encoder](https://www.codewars.com/kata/roman-numerals-encoder/train/javascript) -
 ```bash
-npm run start rNumeralEncoder [number]
+npm run start rNumeralEncoder 'integer'
 ```
 
 [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/javascript)
@@ -32,6 +32,10 @@ npm run start dCalReq '[name, gender (m/f), age (y), height (cm), weight (kg), a
 ```
 * Activity Levels: ```little activity```, ```moderately active```, ```very active```, ```extremely active```
 
+[Next smaller number with the same digits](https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/javascript)
+```bash
+npm run start nextSmaller 'integer'
+```
 
 ### Running tests
 

@@ -5,6 +5,7 @@ const rNumeralEncoder = require('./lib/roman_numeral_encoder');
 const extractDomain = require('./lib/extract_domain');
 const rangeExtract = require('./lib/range_extraction');
 const dCalReq = require('./lib/daily_calorie_req');
+const nextSmaller = require('./lib/next_smaller_number');
 
 let args = process.argv;
 let codewar;
@@ -31,6 +32,10 @@ if(args[2]) {
 
     case 'dCalReq':
     codewar = dCalReq;
+    break;
+
+    case 'nextSmaller':
+    codewar = nextSmaller;
     break;
 
     default:
