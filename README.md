@@ -37,6 +37,11 @@ npm run start dCalReq '[name, gender (m/f), age (y), height (cm), weight (kg), a
 npm run start nextSmaller 'integer'
 ```
 
+[Third angle of a triangle](https://www.codewars.com/kata/third-angle-of-a-triangle/train/javascript)
+```bash
+npm run start thirdAngle 'integer' 'integer'
+```
+
 ### Running tests
 
 To run tests use the following CLI command:
