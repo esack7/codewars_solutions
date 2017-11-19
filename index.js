@@ -6,12 +6,17 @@ const extractDomain = require('./lib/extract_domain');
 const rangeExtract = require('./lib/range_extraction');
 const dCalReq = require('./lib/daily_calorie_req');
 const nextSmaller = require('./lib/next_smaller_number');
+const thirdAngle = require('./lib/third_angle');
 
 let args = process.argv;
 let codewar;
-if(args[3]) {
+if(args[3] && args[4]) {
+  console.log('The argument passed in is = ', args[3], args[4]);
+}
+if(args[3] && !args[4]) {
   console.log('The argument passed in is = ', args[3]);
 }
+
 if(args[2]) {
   switch (args[2]) {
     case 'camelCase':
@@ -38,6 +43,10 @@ if(args[2]) {
     codewar = nextSmaller;
     break;
 
+    case 'thirdAngle':
+    codewar = thirdAngle;
+    break;
+
     default:
     console.error(`The method ${args[2]} is not valid`);
     return;
@@ -45,7 +54,7 @@ if(args[2]) {
 }
 
 if(args[2] && args[3]) {
-  let ret = codewar(`${args[3]}`);
+  let ret = codewar(`${args[3]}`, `${args[4]}`);
   console.log('The return value is = ', ret);
 } else if(!args[2] || !args[3]) {
   console.error('You must include a method and/or pass in arguments');
