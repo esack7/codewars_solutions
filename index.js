@@ -7,6 +7,7 @@ const rangeExtract = require('./lib/range_extraction');
 const dCalReq = require('./lib/daily_calorie_req');
 const nextSmaller = require('./lib/next_smaller_number');
 const thirdAngle = require('./lib/third_angle');
+const factorial = require('./lib/factorial');
 
 let args = process.argv;
 let codewar;
@@ -45,6 +46,10 @@ if(args[2]) {
 
     case 'thirdAngle':
     codewar = thirdAngle;
+    break;
+
+    case 'factorial':
+    codewar = factorial;
     break;
 
     default:
